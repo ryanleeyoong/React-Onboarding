@@ -1,3 +1,15 @@
 .box {
-  @apply w-40 h-40 bg-stone-500;
+  @apply w-80 h-96 bg-white rounded drop-shadow-md;
+}
+
+.bgColor {
+  @apply bg-stone-100;
+}
+
+.category {
+  @apply w-16 h-5 bg-indigo-900/[.90] rounded-2xl ;
+}
+
+.readBtn {
+  @apply text-indigo-900 text-sm font-bold hover:text-indigo-600 active:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300 ;
 }
