@@ -4,17 +4,14 @@ const Box = ({posts}) => {
   return (
     <body>
         {/*Row 1*/}
-        <div>
-            <div className="grid-auto-rows">   
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-8">   
                 {posts.map((post) => (
                     <Post 
-                    className="py-5 space-x-8 place-content-center" 
                     key={post.id} 
                     post={post}
                     />
                 ))}
             </div>
-        </div>
     </body> 
 
     

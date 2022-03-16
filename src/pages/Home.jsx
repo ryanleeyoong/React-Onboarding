@@ -3,7 +3,6 @@ import Header from './../components/Header'
 import Box from './../components/Box'
 import "../styles/Home.css";
 import { useState, useEffect } from 'react'
-import Readmore from './../components/Readmore'
 
 function Home() {
   
@@ -34,7 +33,7 @@ function Home() {
       <Header/>
       
       <body>
-        <Box posts={posts}/>
+        <Box posts={posts} />
       </body>
     </div>
   );
