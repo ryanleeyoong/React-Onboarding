@@ -7,9 +7,13 @@
 }
 
 .category {
-  @apply w-16 h-5 bg-indigo-900/[.90] rounded-2xl ;
+  @apply w-16 h-5 bg-indigo-900/[.90] rounded-2xl;
 }
 
 .readBtn {
-  @apply text-indigo-900 text-sm font-bold hover:text-indigo-600 active:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300 ;
+  @apply text-indigo-900 text-sm font-bold hover:text-indigo-600 active:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300;
+}
+
+hr {
+  @apply block h-px;
 }

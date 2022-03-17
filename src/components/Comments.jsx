@@ -1,13 +1,13 @@
 const Comments = ({comments}) => {
     return (
         <body>
-            {/*Row 1*/}
             <div>
                 <div className="grid-auto-rows">   
                     {comments.map((comments) => (
                         <div>
-                        <h3 className="text-left text-black font-bold text-sm py-2 px-6">{comments.filter}</h3>
-                        <p className="text-left text-black text-xs px-6">{comments.body}</p>
+                        <h3 className="text-left text-black font-bold text-sm py-2 px-6">{comments.email}</h3>
+                        <p className="w-96 text-left text-zinc-400 text-xs px-6">{comments.body}</p>
+                        <hr className="border-grey my-10 w-3/5"></hr>
                         </div>
                     ))}
                 </div>
