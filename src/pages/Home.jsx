@@ -1,6 +1,6 @@
 import React from "react";
-import Header from './../components/Header'
-import Box from './../components/Box'
+import HeaderHome from '../components/molecules/headers/HeaderHome'
+import Post from '../components/molecules/body/Post'
 import "../styles/Home.css";
 import { useState, useEffect } from 'react'
 
@@ -33,19 +33,20 @@ function Home() {
 
   return (
     <div className="bgColor">
-      <Header 
+   
+      <HeaderHome 
         title={"Latest News"} 
         desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non erat ac orci lacinia consequat id quis mauris. Aliquam tristique."}
       />
-      
-      <body>
         {/* 
           Box now contains a posts prop that gets the posts JSON data and sends it to the Box component to use.
           Since all posts objects were fetched, userId, id, title and body were all passed through and can be individually accessed by using posts.specificData.
           posts in it's entirety can be passed too by using posts.
         */}
-        <Box posts={posts} />
-      </body>
+        <Post 
+          posts={posts} 
+        />
+
     </div>
   );
 }
